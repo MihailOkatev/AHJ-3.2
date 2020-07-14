@@ -1,4 +1,4 @@
-export  class ErrorRepository {
+export class ErrorRepository {
   constructor() {
     this.storage = new Map();
     this.storage.set(404, 'Вы пытаетесь создать пустую задачу');
