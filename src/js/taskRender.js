@@ -1,6 +1,7 @@
 // eslint-disable-next-line import/no-cycle
 import { taskManager } from './app';
 
+// eslint-disable-next-line import/prefer-default-export
 export function tasksRender(task) {
   const taskElem = document.createElement('div');
   taskElem.classList.add('task');
