@@ -1,4 +1,7 @@
+// eslint-disable-next-line import/no-cycle
+import { dataCheck } from './dataCheck';
 
+// eslint-disable-next-line import/prefer-default-export
 export function taskDisplay(tasks) {
   const pinnedTasks = document.createDocumentFragment();
   const standartTasks = document.createDocumentFragment();
@@ -13,4 +16,5 @@ export function taskDisplay(tasks) {
   document.querySelector('#tasks_list__standart').innerHTML = '';
   document.querySelector('#tasks_list__pinned').append(pinnedTasks);
   document.querySelector('#tasks_list__standart').append(standartTasks);
+  dataCheck();
 }

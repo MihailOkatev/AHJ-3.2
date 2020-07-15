@@ -1,6 +1,10 @@
+// eslint-disable-next-line import/no-cycle
 import { taskManager } from './app';
+// eslint-disable-next-line import/no-cycle
 import Task from './Task';
+// eslint-disable-next-line import/no-cycle
 import { taskDisplay } from './taskDisplay';
+// eslint-disable-next-line import/no-cycle
 import { field } from './listenersAdd';
 import { ErrorRepository } from './ErrorRepository';
 
