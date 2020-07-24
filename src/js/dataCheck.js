@@ -1,5 +1,4 @@
-// eslint-disable-next-line import/no-cycle
-import { taskManager } from './app';
+import { taskManager } from './TaskManager';
 
 // eslint-disable-next-line import/prefer-default-export
 export function dataCheck() {

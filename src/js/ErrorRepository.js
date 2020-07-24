@@ -3,7 +3,7 @@ export class ErrorRepository {
   constructor() {
     this.storage = new Map();
     this.storage.set(404, 'Вы пытаетесь создать пустую задачу');
-    this.storage.set(400, 'такой задача уже есть');
+    this.storage.set(400, 'такая задача уже есть');
   }
 
   tranlsate(code) {
@@ -13,3 +13,4 @@ export class ErrorRepository {
     return 'Unknown error';
   }
 }
+export const err = new ErrorRepository();

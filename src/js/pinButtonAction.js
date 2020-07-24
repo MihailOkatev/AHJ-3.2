@@ -1,7 +1,4 @@
-// eslint-disable-next-line import/no-cycle
-import { taskManager } from './app';
-// eslint-disable-next-line import/no-cycle
-import { taskDisplay } from './taskDisplay';
+import { taskManager } from './TaskManager';
 
 // eslint-disable-next-line import/prefer-default-export
 export function pinButtonAction(taskid) {
@@ -11,5 +8,5 @@ export function pinButtonAction(taskid) {
   } else {
     taskManager.tasks[id].pinned = false;
   }
-  taskDisplay(taskManager.tasks);
+  return taskManager;
 }
